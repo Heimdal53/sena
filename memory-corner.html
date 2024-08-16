@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anı Köşesi</title>
+    <link rel="stylesheet" href="memory-corner.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="nav-link">Ana Sayfa</a>
+            <a href="#gallery" class="nav-link">Galeri</a>
+            <a href="#upload" class="nav-link">Fotoğraf Yükle</a>
+        </nav>
+        <h1>Anı Köşesi</h1>
+    </header>
+
+    <main>
+        <section id="gallery" class="gallery-section">
+            <h2>Galeri</h2>
+            <div class="filter-container">
+                <label for="filter">Filtrele:</label>
+                <select id="filter">
+                    <option value="all">Tümü</option>
+                    <option value="nature">Oyun</option>
+                    <option value="people">Biz</option>
+                    <!-- Diğer filtreler buraya eklenebilir -->
+                </select>
+            </div>
+            <div class="gallery" id="gallery">
+                <!-- Fotoğraflar buraya yüklenecek -->
+            </div>
+        </section>
+
+        <section id="upload" class="upload-container">
+            <h2>Fotoğraf Yükle</h2>
+            <input type="file" id="fileInput" accept="image/*" />
+            <button id="uploadButton" class="action-btn">Fotoğraf Yükle</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Anı Köşesi. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="memory-corner.js"></script>
+</body>
+</html>

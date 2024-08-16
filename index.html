@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akıllı bıdığım SENA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <div class="parallax"></div>
+
+    <div class="content">
+        <div class="photo-frame">
+            <div class="image-container">
+                <img src="sena.jpg" alt="Sena" class="centered-image">
+            </div>
+
+            <div class="popup" id="popup">
+                <p>Hoş geldin aşkım anı köşemizi doldurmaya hazırmısın?!</p>
+                <a href="https://open.spotify.com/intl-tr/track/36oBlwSPNtA48TLYqk4SNp?si=4d03996ef368402c" target="_blank">
+                    <img src="spotify.jpg" alt="Spotify Logo" class="spotify-logo">
+                </a>
+            </div>
+
+            <button class="rainbow_btn">Seni Seviyorum Sena</button>
+            <button class="reload-btn" onclick="reloadPage()">Yenile</button>
+            <a href="memory-corner.html" class="memory-corner-btn">Anı Köşesi</a>
+        </div>
+
+        <div class="info-icon" onclick="showInfo()">i</div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
